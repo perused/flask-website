@@ -6,19 +6,21 @@
     <link rel="shortcut icon" href="/static/img/favicon.ico">
     <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/pure.css') }}">
     <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/grid.css') }}">
-    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/main.css') }}">
-    </script>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/style.css') }}">
   </head>
-  <!-- <body>
-    <div class="container">
-      <ul class="page-nav">
-        <li><a href="{{ url_for('list_artists') }}">Artists</a></li>
-        <li><a href="{{ url_for('list_songs') }}">Songs</a></li>
-        <li><a href="{{ url_for('list_podcasts') }}">Podcasts</a></li>
-        <li><a href="{{ url_for('list_albums') }}">Albums</a></li>
-        <li><a href="{{ url_for('list_tvshows') }}">TV Shows</a></li>
-        <li><a href="{{ url_for('list_movies') }}">Movies</a></li>
-      </ul>
-    </div>
-  </body> -->
+  <div nav>
+    <body>
+      <div class="navbar">
+        <ul class="menu">
+          <div class="name">
+            <li><a class="active" href="#index">Sam Jacobs</a></li>
+          </div>
+          <div class="other">
+            <li><a href="#fun">Sandbox</a></li>
+            <li><a href="#about">About</a></li>
+          </div>
+        </ul>
+      </div>
+    </body>
+  </div>
 </html>

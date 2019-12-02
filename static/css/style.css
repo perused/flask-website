@@ -1,1 +1,56 @@
-/* test */
+.name li {
+  float:left;
+}
+
+.name li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 60px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.other li {
+  float: right;
+}
+
+.other li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 40px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.other li a:hover {
+  background-color: #111;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.footer li {
+  float: left;
+}
+
+.benedict img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
