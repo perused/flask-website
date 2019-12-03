@@ -1,5 +1,28 @@
+.box ul {
+  list-style-type: none;
+  padding: 0;
+  width: 400px;
+  background-color: #f1f1f1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.box li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.box li a:hover {
+  background-color: #555;
+  color: white;
+}
+
 .page body {
-  background-color: #333;
+  background-color: lightblue;
 }
 
 .name li {
