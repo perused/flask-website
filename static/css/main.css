@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Font";
+  font-family: "Roboto Thin";
   src: url("/static/fonts/Roboto-Thin.ttf");
 }
 
 h1 {
-  font: 10vw "Font", sans-serif;
+  font: 10vw "Roboto Thin", sans-serif;
   text-align: center;
   margin-bottom: 4vw;
   line-height: 1;
