@@ -1,6 +1,11 @@
+img {
+  width: 8%;
+  float: left;
+}
+
 .box ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 0px;
   width: 400px;
   background-color: #f1f1f1;
   display: block;
@@ -25,17 +30,14 @@
   background-color: lightblue;
 }
 
-.name li {
-  float:left;
-}
-
-.name li a {
+.name h1 {
   display: block;
-  color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .navbar ul {
