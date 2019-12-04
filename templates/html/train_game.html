@@ -8,15 +8,17 @@
   <body>
     <h1>Train Game</h1>
     <div class="train_nums">
-      <form class="add" method="POST">
-        <ul>
-          <li><input type="number" name="input_add" placeholder="" autofocus required><br></li>
-          <li><input type="number" name="input_add" placeholder="" autofocus required><br></li>
-          <li><input type="number" name="input_add" placeholder="" autofocus required><br></li>
-          <li><input type="number" name="input_add" placeholder="" autofocus required><br></li>
-          <li><button class="flat" type="submit">Add Now</button></li>
-        </ul>
-      </form>
+      <ul>
+        <form class="add" method="POST">
+          <!-- Prevent more than one number being put in? and also not negative numbers -->
+          <!-- Once a number is put in, automatically jump to the next number -->
+          <li><input type="number" name="input" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="input" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="input" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="input" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><button class="flat" type="submit">GO</button></li>
+        </form>
+      </ul>
     </div>
   </body>
 </html>

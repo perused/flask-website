@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import *
 import sys
 
 app = Flask(__name__)
@@ -17,7 +17,11 @@ def projects():
 
 @app.route("/train_game", methods=['POST', 'GET'])
 def train_game():
-    return render_template("/html/train_game.html")
+    if request.method == "GET":
+        return render_template("/html/train_game.html")
+
+    elif request.method == "POST":
+        return render_template("/html/train_game.html")
 
 @app.route("/centaur_generator")
 def centaur_generator():

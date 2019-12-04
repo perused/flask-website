@@ -1,24 +1,28 @@
-train_nums form {
-
-}
-
-train_nums ul {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: white;
+.train_nums ul {
+  list-style-type: inline;
+  padding: 0px 0px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  background-color: #333;
-  list-style-type: none;
 }
 
-train_nums ul li {
-
+.train_nums ul li {
+  float: left;
+  list-style-type: none
 }
 
-train_nums ul li a {
+/* Hides spin box on chrome */
+.train_nums input::-webkit-outer-spin-button,
+.train_nums input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Hides spin box on firefox */
+.train_nums input[type=number] {
+  -moz-appearance:textfield;
+  width: 25%;
 }
 
 @font-face {
