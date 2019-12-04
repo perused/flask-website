@@ -1,3 +1,26 @@
+train_nums form {
+
+}
+
+train_nums ul {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #333;
+  list-style-type: none;
+}
+
+train_nums ul li {
+
+}
+
+train_nums ul li a {
+
+}
+
 @font-face {
   font-family: "Roboto Thin";
   src: url("/static/fonts/Roboto-Thin.ttf");

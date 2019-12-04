@@ -15,7 +15,7 @@ def about():
 def projects():
     return render_template("/html/projects.html")
 
-@app.route("/train_game")
+@app.route("/train_game", methods=['POST', 'GET'])
 def train_game():
     return render_template("/html/train_game.html")
 
