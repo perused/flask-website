@@ -1,3 +1,4 @@
+from modules import *
 from flask import *
 import sys
 
@@ -17,19 +18,34 @@ def projects():
 
 @app.route("/train_game", methods=['POST', 'GET'])
 def train_game():
+
+    results = []
+
     if request.method == "GET":
-        return render_template("/html/train_game.html")
+        return render_template("/html/traingame.html", results=results)
 
     elif request.method == "POST":
-        return render_template("/html/train_game.html")
 
-@app.route("/centaur_generator")
+        results = generate (
+            request.form["num1"],
+            request.form["num2"],
+            request.form["num3"],
+            request.form["num4"]
+        )
+
+        if results == None:
+            results = []
+            return render_template("/html/traingame.html", results=results)
+
+        return render_template("/html/traingame.html", results=results)
+
+@app.route("/centaurgenerator")
 def centaur_generator():
-    return render_template("/html/centaur_generator.html")
+    return render_template("/html/centaurgenerator.html")
 
-@app.route("/in_progress")
+@app.route("/inprogress")
 def in_progress():
-    return render_template("/html/in_progress.html")
+    return render_template("/html/inprogress.html")
 
 
 if __name__=="__main__":

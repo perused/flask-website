@@ -1,0 +1,37 @@
+{% include '/html/header.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Train Game</h1>
+    <div class="train_nums">
+      <ul>
+        <form class="add" method="POST">
+          <!-- Prevent more than one number being put in? and also not negative numbers -->
+          <!-- Once a number is put in, automatically jump to the next number -->
+          <li><input type="number" name="num1" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="num2" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="num3" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><input type="number" name="num4" placeholder="" autofocus required autocomplete="off" step="1" max="9" Min="0" maxlength="1"><br></li>
+          <li><button class="flat" type="submit">GO</button></li>
+        </form>
+
+        <table class="solutiontable">
+          <thead>
+            <tr>
+              <td>Solutions</td>
+            </tr>
+          </thead>
+          <tbody>
+            {% for instance in results %}
+              <td>{{ instance }}</td>
+            {% endfor %}
+          </tbody>
+        </table>
+      </ul>
+    </div>
+  </body>
+</html>
