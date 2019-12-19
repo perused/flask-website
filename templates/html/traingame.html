@@ -19,18 +19,13 @@
           <li><button class="flat" type="submit">GO</button></li>
         </form>
 
-        <table class="solutiontable">
-          <thead>
-            <tr>
-              <td>Solutions</td>
-            </tr>
-          </thead>
-          <tbody>
+        <div class="solutions">
+          <table>
             {% for instance in results %}
-              <td>{{ instance }}</td>
+            <tr><td>{{ instance }}</td></tr>
             {% endfor %}
-          </tbody>
-        </table>
+          </table>
+        </div>
       </ul>
     </div>
   </body>
