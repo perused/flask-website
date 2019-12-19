@@ -1,3 +1,20 @@
+body {
+  height: 100%;
+}
+
+img {
+  width: 5%;
+  float: left;
+}
+
+.container {
+  margin-top: 2.5em !important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navbar a {
   color: white;
   font-size: 1.5em;
@@ -16,6 +33,6 @@ h1 {
   font: 3vw "Roboto Thin", sans-serif;
   /* font-family: 3em "Roboto Thin", sans-serif; */
   text-align: center;
-  padding-top: 1em;
-  font-size: 4.5em !important;
+  padding-top: 0.5em;
+  font-size: 6em !important;
 }
