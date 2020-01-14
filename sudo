@@ -1,0 +1,1 @@
+/run/uwsgi 0755 www-data www-data - /etc/tmpfiles.d/uwsgi.conf
