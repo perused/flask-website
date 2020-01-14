@@ -1,5 +1,6 @@
 body {
   height: 100%;
+  width: 100%;
 }
 
 img {
@@ -13,6 +14,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .list-group {
@@ -38,6 +40,6 @@ h1 {
   font: 3vw "Roboto Thin", sans-serif;
   /* font-family: 3em "Roboto Thin", sans-serif; */
   text-align: center;
-  padding-top: 0.5em;
-  font-size: 6em !important;
+  padding-top: 1.5em;
+  font-size: 7em !important;
 }

@@ -1,9 +1,12 @@
-{% include '/html/header.html' %}
+<!-- {% include '/html/header.html' %} -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Sam Jacobs</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   </head>
     <body>
       <h1>Sam Jacobs</h1>
@@ -14,5 +17,7 @@
           <a class="list-group-item text-center d-inline-block list-group-item-action" href="static/files/CV Sam Jacobs.pdf" download><img src="/static/img/download.ico" alt="download">CV</a>
         </ul>
       </div>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>
